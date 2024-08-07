@@ -1,7 +1,9 @@
-apiVersion: core.choreo.dev/v1beta1
-kind: ComponentConfig
-spec:
-  inbound:
-    - type: HTTP
-      context: /contact
-      port: 5000
+version: 0.1
+
+endpoint:
+  name: contact
+  type: HTTP
+  port: 5000
+  context: /contact
+  networkVisibility: Public
+  schemaFilePath: openapi.yaml
