@@ -13,7 +13,7 @@ function App() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('https://react-node-fs-app.onrender.com/contact', formData)
+    axios.post('http://localhost:5000/contact', formData)
       .then(response => {
         setResponseMessage(response.data.message);  // Set the server response message
         console.log(response);
